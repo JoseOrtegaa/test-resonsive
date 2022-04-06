@@ -1,0 +1,759 @@
+@font-face {
+  font-family: 'font-medium';
+  src: url('./fonts/NuovaVolte-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'font-regular';
+  src: url('./fonts/NuovaVolte-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'font-semibold';
+  src: url('./fonts/NuovaVolte-SemiBold.woff2') format('woff2');
+}
+
+/*font-medium , font-regular, font-semibold */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: font-semibold;
+  overflow-x: hidden;
+}
+
+/*
+####################
+### H E A D E R ####
+####################
+*/
+
+header ul,
+header div button:not(.btn-carrito),
+footer div > ul,
+header div > img {
+  display: none;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vmin;
+  background: white;
+  min-width: 100%;
+}
+
+header > button {
+  height: 7rem;
+  font-size: 3vmin;
+  margin: 2vmin;
+  background-color: transparent;
+  border: none;
+}
+
+header > img {
+  max-width: 9vmin;
+}
+
+.btn-carrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3vmin;
+  font-size: 2.5vmin;
+  border: 2px solid rgba(128, 128, 128, 0.534);
+  border-radius: 5px;
+  padding: 1vmin;
+  color: blue;
+  background-color: transparent;
+  margin: 2.5vmin;
+}
+
+.btn-carrito img {
+  max-height: 2vmin;
+}
+
+/*
+####################
+### B O D Y ########
+####################
+*/
+
+/*
+####################
+### 1 SECTION ######
+####################
+*/
+
+.section-one {
+  margin: 3rem;
+  margin-top: 4rem;
+}
+
+.section-one h1 {
+  font-size: 2.7rem;
+  max-width: 100vmin;
+}
+
+.section-one h3 {
+  font-size: 1rem;
+  max-width: 100vmin;
+  color: gray;
+}
+
+.section-one button {
+  display: inline;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.section-one button:first-of-type {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  background: rgb(33, 100, 245);
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 45px;
+}
+
+.section-one button:not(first-of-type) {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(33, 100, 245);
+  background: white;
+  border: 2px solid rgb(33, 100, 245);
+  border-radius: 5px;
+  width: 120px;
+  height: 45px;
+  margin-left: 10px;
+}
+
+/*###########
+#####DIV DESPLAZABLES
+#############
+*/
+.div-desplazables {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  margin: 1.5vmin;
+}
+
+.div-desplazables p {
+  padding: 1vmin;
+}
+
+.div-firstimg {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 60px;
+}
+
+.div-firstimg img {
+  max-width: 400px;
+}
+
+.div-firstimg a {
+  margin-top: 40px;
+  text-decoration: none;
+  color: rgb(33, 100, 245);
+}
+
+.div-firstimg h3 {
+  font-size: 35px;
+}
+
+.div-firstimg p {
+  color: gray;
+  line-height: 30px;
+  font-family: font-regular;
+  font-size: 17px;
+  margin-top: 0px;
+}
+
+.div-firstimg span {
+  margin-top: 1rem;
+  color: gray;
+  font-family: font-regular;
+}
+
+.div-firstimg strong {
+  color: black;
+  font-family: font-medium;
+}
+
+.div-firstimg button {
+  width: 120px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.div-firstimg button:first-child {
+  background-color: rgb(33, 100, 245);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.div-firstimg button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.548);
+  border-radius: 5px;
+}
+
+/*###########
+#####SECTION BOOKS#####
+##############
+*/
+
+.section-books {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-top: 60px;
+  background-color: rgba(128, 128, 128, 0.075);
+}
+
+.section-books div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.section-books div img {
+  max-width: 40vmin;
+}
+
+.section-books div a {
+  margin-top: 40px;
+  text-decoration: none;
+  color: rgb(33, 100, 245);
+}
+
+.section-books h2 {
+  font-size: 40px;
+}
+
+.section-books div h3 {
+  font-size: 25px;
+}
+
+.section-books div p {
+  color: gray;
+  line-height: 30px;
+  font-family: font-regular;
+  font-size: 17px;
+  margin-top: 0px;
+}
+
+.section-books div > div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.section-books div > div button {
+  width: 120px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#transparent {
+  color: transparent;
+}
+
+.section-books div > div button:first-child {
+  background-color: rgb(33, 100, 245);
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.section-books div > div button:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.548);
+  border-radius: 5px;
+}
+
+/*#############
+###SECTION COLORS###
+##################
+*/
+
+.section-blue {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-blue div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.section-blue div:first-child {
+  background-color: rgb(33, 100, 245);
+  color: white;
+}
+
+.section-blue div:last-child {
+  background-color: black;
+  color: white;
+}
+
+.section-blue h1 {
+  font-size: 40px;
+}
+
+.section-blue div > p {
+  line-height: 30px;
+}
+
+.section-blue h3 {
+  font-size: 25px;
+}
+
+.buy {
+  color: rgb(33, 100, 245);
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  background: white;
+  height: 40px;
+  width: 170px;
+}
+
+.more {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  background: rgb(33, 100, 245);
+  border: 2px solid white;
+  margin-top: 20px;
+  height: 40px;
+  width: 130px;
+}
+
+.buy-black {
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  background: white;
+  height: 40px;
+  width: 170px;
+}
+
+.more-black {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;
+  background: black;
+  border: 2px solid white;
+  margin-top: 20px;
+  height: 40px;
+  width: 130px;
+}
+
+/*##################
+#####FOOTER########
+###################
+*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(128, 128, 128, 0.075);
+}
+
+footer div {
+  margin: 20px;
+}
+
+footer div p {
+  line-height: 25px;
+}
+
+footer div button {
+  background-color: transparent;
+  border: 2px solid rgba(128, 128, 128, 0.144);
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+footer div:last-child {
+  border-top: 2px solid rgba(128, 128, 128, 0.548);
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+footer div > p {
+  color: gray;
+}
+
+footer div a {
+  text-decoration: none;
+  color: gray;
+  font-family: font-regular;
+}
+
+@media (min-width: 765px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+  }
+
+  .section-one {
+    overflow-x: hidden;
+    margin-top: 4rem;
+  }
+
+  .section-one h1 {
+    font-size: 5rem;
+  }
+
+  .section-one h3 {
+    font-size: 1.3rem;
+  }
+
+  .div-desplazables {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+
+  .div-firstimg {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+
+  .div-firstimg > img {
+    max-height: 40vmin;
+    margin: 10vmin;
+  }
+
+  .div-firstimg > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+  }
+
+  .section-books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  .section-books div > img {
+    max-height: 20vmin;
+    margin: 10vmin;
+  }
+
+  .section-books > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .section-books div h3 {
+    font-size: 2.2rem;
+  }
+
+  .section-blue {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  .section-blue div {
+    width: 40vw;
+    margin: 1rem;
+  }
+
+  footer div h3 {
+    font-size: 2rem;
+    width: 85vw;
+  }
+
+  footer div p {
+    color: gray;
+  }
+
+  footer div:last-child {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1020px) {
+  header {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-evenly;
+  }
+
+  header ul,
+  header div button:not(.btn-carrito),
+  header div > img {
+    display: flex;
+  }
+
+  header > button,
+  header > img,
+  footer div > ul {
+    display: none;
+  }
+
+  header div > img {
+    max-width: 20vmin;
+  }
+
+  header ul {
+    list-style: none;
+  }
+
+  header ul li a {
+    font-size: 0.7rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: gray;
+  }
+
+  #home {
+    color: black;
+    border-bottom: 2px solid blue;
+  }
+
+  header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header div button:first-child {
+    width: 7vmin;
+    color: gray;
+    background: transparent;
+    border: transparent;
+  }
+
+  header div button:nth-child(2) {
+    background: rgb(33, 100, 245);
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+    padding: 0.2rem;
+  }
+
+  header div button:last-child > img {
+    height: 2.5vmin;
+  }
+
+  header div button:last-child {
+    border: 2px solid gray;
+    font-size: 1rem;
+    min-height: 1.5rem;
+  }
+
+  .section-one {
+    margin-left: 6rem;
+    margin-top: 4rem;
+  }
+  .section-one h1 {
+    font-size: 3rem;
+  }
+
+  .section-one h3 {
+    font-size: 0.9rem;
+  }
+
+  .section-one button {
+    max-height: 1.5rem;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .div-desplazables {
+    justify-content: space-around;
+  }
+
+  .div-firstimg div {
+    width: 40vw;
+  }
+
+  .div-firstimg img {
+    min-height: 50vmin;
+  }
+
+  .div-firstimg div {
+    font-size: 0.7rem;
+    justify-content: center;
+  }
+
+  .div-firstimg div span {
+    margin-top: 0.2rem;
+  }
+
+  .div-firstimg div > h3 {
+    font-size: 1.2rem;
+  }
+
+  .div-firstimg div > p {
+    font-size: 0.8rem;
+    width: 25rem;
+    line-height: 1rem;
+  }
+
+  .div-firstimg div button {
+    max-height: 1.7rem;
+    max-width: 5rem;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .section-books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .section-books div {
+    justify-content: center;
+    max-width: 30%;
+    font-size: 0.5rem;
+  }
+
+  .section-books img {
+    min-height: 11rem;
+  }
+  .section-books div span {
+    margin-top: 0.2rem;
+  }
+
+  .section-books div > h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-books div > h3 {
+    font-size: 1rem;
+  }
+  .section-books div > p {
+    font-size: 0.5rem;
+    width: 10rem;
+    line-height: 1rem;
+  }
+
+  .section-books div > div button {
+    max-height: 1.5rem;
+    min-width: 4rem;
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+
+  .section-blue div {
+    display: flex;
+    display: table-row;
+    max-width: 35%;
+    max-height: 60vh;
+  }
+
+  .section-blue div p,
+  .section-blue div h3 {
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+
+  .section-blue div h1 {
+    font-size: 1.5rem;
+  }
+
+  .section-blue div > button {
+    max-width: 7rem;
+    max-height: 3rem;
+    font-size: 0.7rem;
+  }
+
+  footer {
+  }
+
+  footer div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  footer div > h3 {
+    font-size: 2rem;
+    max-width: 25rem;
+  }
+
+  footer div > p {
+    font-size: 1rem;
+    max-width: 35rem;
+    float: left;
+  }
+
+  footer div > button {
+    max-width: 5rem;
+    max-height: 2rem;
+    font-size: 0.7rem;
+  }
+
+  footer div:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer div:last-child ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+  }
+
+  footer div:last-child ul li {
+    margin: 0.5rem;
+  }
+}
